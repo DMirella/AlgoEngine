@@ -1,0 +1,19 @@
+#include "blockmanager.h"
+
+BlockSequence::BlockSequence()
+{
+}
+
+void BlockSequence::addBlock(Block *block)
+{
+    sequence.append(block);
+}
+
+void BlockSequence::executeBlockList()
+{
+    QMutableListIterator<Block*> it(sequence);
+    while(it.hasNext()){
+        it.next();
+        it.value()->doAlgorithm();
+    }
+}

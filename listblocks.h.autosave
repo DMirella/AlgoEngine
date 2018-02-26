@@ -1,0 +1,11 @@
+#ifndef LISTBLOCKS_H
+#define LISTBLOCKS_H
+
+
+class BlockSequence
+{
+public:
+    BlockSequence();
+};
+
+#endif // LISTBLOCKS_H

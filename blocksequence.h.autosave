@@ -1,0 +1,20 @@
+#ifndef BLOCKSEQUENCE_H
+#define BLOCKSEQUENCE_H
+
+#include <QList>
+
+#include "Blocks/block.h"
+
+class BlockSequence
+{
+public:
+    BlockSequence();
+    void addBlock(Block *block);
+    void delBlock(Block *block);
+
+    void executeBlockList();
+private:
+    QList<Block*> sequence;
+};
+
+#endif // BLOCKSEQUENCE_H
